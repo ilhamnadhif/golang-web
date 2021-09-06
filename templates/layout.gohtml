@@ -1,0 +1,10 @@
+{{define "layout"}}
+    {{template "header".}}
+    <h1>Hello {{.Name}}</h1>
+    {{template "footer.gohtml"}}
+{{end}}
+
+{{/* Tidak di render karena namanya tidak dipanggil */}}
+{{define "tidak terdefinisi"}}
+    <h1>Mbuh</h1>
+{{end}}
